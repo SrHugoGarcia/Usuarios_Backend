@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "constancias-368519",
+  "private_key_id": "6308fe65c6e1705e08b2e141b245c1d25af0c23b",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCrlnE0maajVuPm\nXKx//NUMRwbgHuBh6XqS5OhS+94qhRzn3gQkhC2yVWsl/VHo74yLIUxGl64fOj27\nvCIYwKXQbwLe/BqJFMou3qDfFH1Mkiw7ks0yzp2WMGHEpUZvRMFmoRwnLj6vLsLE\nint/HAAFE5IJyNxVZkQjO2np809m3dDaJNqLEjI7Z0Ge5uv3qB/cb3upirQ2HEDR\nhfN2+R/6nUhrwxHZdFGL7D+uyJEks161jFswg3/o1ZfuYTS30nM1iff3X5dkjzIM\nBN/OQLEdvxMmRh6K2q+XGHI4OX3xTHd3u1uWD6f+yUa4iJ9rP+0HaCn6AhlN6iMu\nZ5NTzTbTAgMBAAECggEABWdK8FpIW6DLCNWb9GSHZwgTk4TqvFqdwA4nsiP5YUMT\ninUSPKjRnD9BYmRhqyFkE9DmyzBP95lzbpE5olLqxdoWb+Q7h7FDvrRxwiSt33aY\n9aqlU0zGEf/ltvYcy43m6Jmj6Sif07oiwGK7XzYyr/Y8+pmR4A9E5QvOxY3NJH2Z\njb17I1RZm+mqI8MmLcvbjlYuLbSej339sJIEvWUTSaej2jMzy+iGFJVu3bIRcNY/\ngeA2rk2/T6jhLC4r7FU8l0OoO6udmHWKYrglmqzvGDd+A6veCRDszIc+bcCsabPC\np745qN85vFNTbONPPNuZzKU32vvK0esdv2elyKrQsQKBgQDUK8Ib7+yLbX+dgK4d\nxDVmkc2q5ALeKzorqjb4XdK/f5F4dcFuUyLWSt8kJaRC30nsm5af7gJj8qJSusdy\n4mFkgGume/b8Slk8egB0aUSXCD05k9TNyahm3mxSx9UZLpG1g0ytS7HAuIuN1F3Z\nL7nSUwTkOHoJghfwypnddvRnAwKBgQDPCISU3ntu/p54lrZsy0+ov9JQTMfz9sLs\n/3x3JmdkoM4PSHdaqFPsHjw/19VWM2xWsZKYUcUxiSUBd704VW6gnveOSJdbZeZ3\n3SlSq5nJWx/z7l8ovTDP89r0IOPN9n7CmGNX1684ObnbLso78oZqZCGNIyIqaw5r\nN/0crJ+/8QKBgQDJgO2PXuQG323OBkJXHtugmGT+IiLfIarTgYtHgsP+/4cHIr8c\nqnRxlRYr3FwO7sXkozgAmClJB01GyQFXiMz6iES1DxLZNTtfBnecF8X+suKC5nW7\nJAR9/kxeqk8m5WWZQCP4ieU9pYdUohaniH4w1IvWvBSbJyTZmXFcNfeURQKBgDU1\n7z2D4R2p+3jq44Aa0SKCCr/wvAOMDJV1JLxK9o/6dHuhGGwIj2lEbB/MjVxWYyX1\nBcR4X8JXiVdTOyLbck9+DApZxe0Lx6xO/2vsBt6luRSs03BZD86i0keknGg3TmUd\nXYsaOEKvM4GOCRRXRQzbJ3Rq70EPuuj7vuY7x+NBAoGABGlAQKK95jtYNH/xXjT3\nGtQ/He8HIeU7nQZyekzgA/oB26y/yO6CjWCEcIvAJOtKFm5OMf7C0zITCeCkrBb1\nfm2noIknoN5SN0TkEjyxLKHY7XR0cXEXiUDRa5jYq0Ay69Qu8HWxoVJE4jh19ZGu\nUn2ydMWRmtQ0Rp8Y2PLaTns=\n-----END PRIVATE KEY-----\n",
+  "client_email": "constancias@constancias-368519.iam.gserviceaccount.com",
+  "client_id": "107955946486155873886",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/constancias%40constancias-368519.iam.gserviceaccount.com"
+}

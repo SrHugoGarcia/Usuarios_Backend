@@ -1,0 +1,277 @@
+doctype html
+html(lang="en")
+    head
+        //meta(charset="UTF-8")
+        //meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+        //https://autoprefixer-github-io.translate.goog/?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=sc
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        // <link rel="stylesheet" href="css/estilos.css">
+        include _styleDc3
+    body
+        .container
+            .container-secundario
+                // HEADER
+                .container-logo
+                    img.logo(src="")
+
+                .container-title
+                    h3.title-principal Formato dc-3
+                        br
+                        | constancia de competencias o de habilidades
+                        br
+                        | laborales
+                // FIN DE HEADER
+                // DATOS DEL TRABAJADOR
+                .container-trabajador
+                    h4.title-trabajador Datos del trabajador
+                    .nombre
+                        p Nombre (Anotar apellido paterno, apellido materno y nombre (s))
+                    .datos-nombre
+                        h4 #{user.nombre} #{user.apellidoPaterno} #{user.apellidoMaterno}
+                    .section
+                        .curp
+                            p Clave Única de Registro de Población
+                        .ocupacion
+                            p Ocupación específica (Catálogo Nacional de Ocupaciones)
+                    .section2
+                        .datos-curp
+                            .dato
+                                h4 #{user.curp[0]}
+                            .dato
+                                h4 #{user.curp[1]}  
+                            .dato
+                                h4 #{user.curp[2]}
+                            .dato
+                                h4 #{user.curp[3]}
+                            .dato
+                                h4 #{user.curp[4]}
+                            .dato
+                                h4 #{user.curp[5]}
+                            .dato
+                                h4 #{user.curp[6]}
+                            .dato
+                                h4 #{user.curp[7]}
+                            .dato
+                                h4 #{user.curp[8]}
+                            .dato
+                                h4 #{user.curp[9]}
+                            .dato
+                                h4 #{user.curp[10]}
+                            .dato
+                                h4 #{user.curp[11]}
+                            .dato
+                                h4 #{user.curp[12]}
+                            .dato
+                                h4 #{user.curp[13]}
+                            .dato
+                                h4 #{user.curp[14]}
+                            .dato
+                                h4 #{user.curp[15]}
+                            .dato
+                                h4 #{user.curp[16]}
+                            .ultimo-dato.dato
+                                h4 #{user.curp[17]}
+                        .datos-ocupacion
+                            h4 #{user.ocupacionEspecifica}
+                    .puesto
+                        p Puesto*
+                    .datos-puesto
+                        h4 Desarrollador web
+                // FIN DATOS DEL TRABAJADOR
+                // DATOS DE LA EMPRESA
+                .container-empresa
+                    h4.title-empresa Datos de la empresa
+                    .razon-social
+                        p
+                            | Nombre o razón social (En caso de persona física, anotar apellido paterno, apellido materno y nombre(s))
+                    .datos-razon-social
+                        h4 #{user.razonSocialEmpresa}
+                    .shcp
+                        p Registro Federal de Contribuyentes con homoclave (SHCP)
+                    .datos-shcp
+                        .dato-shcp
+                            h4
+                        .dato-shcp
+                            h4 #{user.shcp[0]}
+                        .dato-shcp
+                            h4 #{user.shcp[1]}
+                        .dato-shcp
+                            h4 #{user.shcp[2]}
+                        .dato-shcp
+                            h4 #{user.shcp[3]}
+                        .dato-shcp
+                            h4 #{user.shcp[4]}
+                        .dato-shcp
+                            h4 #{user.shcp[5]}
+                        .dato-shcp
+                            h4 #{user.shcp[6]}
+                        .dato-shcp
+                            h4 #{user.shcp[7]}
+                        .dato-shcp
+                            h4 #{user.shcp[8]}
+                        .dato-shcp
+                            h4 #{user.shcp[9]}
+                        .dato-shcp
+                            h4 #{user.shcp[10]}
+                        .dato-shcp
+                            h4 #{user.shcp[11]}
+                        .dato-shcp
+                            h4 #{user.shcp[12]}
+                        .ultimo-dato-shcp.dato-shcp
+                            h4 #{user.shcp[13]}
+                // FIN DATOS DE LA EMPRESA
+                // DATOS DEL PROGRAMA DE CAPACITACIÓN
+                .container-capacitacion
+                    h4.title-capacitacion Datos del programa de capacitación, adiestramiento y productividad
+                    .nombre-curso
+                        p Nombre del curso
+                    .dato-curso
+                        p 
+                            span  #{curso.nombre}
+                    .section3
+                        .horas
+                            .duracion
+                                p Duración en horas
+                            .dato-duracion
+                                h4 #{curso.duracion}
+                        .periodo
+                            p Periodo de ejecución: De
+                        .fecha1
+                            .title-fecha1
+                                .title
+                                    p Año
+                                .title
+                                    p Mes
+                                .title
+                                    p Día
+                            .campos-fecha
+                                .dato-anio
+                                    .dato
+                                        h4 2
+                                .dato-anio
+                                    .dato
+                                        h4 0
+                                .dato-anio
+                                    .dato
+                                        h4 2
+                                .dato-anio
+                                    .dato
+                                        h4 2
+                                .dato-mes
+                                    .dato
+                                        h4 0
+                                .dato-mes
+                                    .dato
+                                        h4 6
+                                .dato-dia
+                                    .dato
+                                        h4 1
+                                    .dato
+                                        h4 5
+                        .separacion
+                            p a
+                        .fecha1
+                            .title-fecha1
+                                .title
+                                    p Año
+                                .title
+                                    p Mes
+                                .title
+                                    p Día
+                            .campos-fecha
+                                .dato-anio
+                                    .dato
+                                        h4 2
+                                .dato-anio
+                                    .dato
+                                        h4 0
+                                .dato-anio
+                                    .dato
+                                        h4 2
+                                .dato-anio
+                                    .dato
+                                        h4 2
+                                .dato-mes
+                                    .dato
+                                        h4 0
+                                .dato-mes
+                                    .dato
+                                        h4 6
+                                .dato-dia
+                                    .dato
+                                        h4 1
+                                    .dato
+                                        h4 5
+                    .tematica-curso
+                        .tematica
+                            p Área temática del curso
+                        .dato-tematica
+                            h4 #{curso.areaTematica}
+                    .capacitador
+                        .agente
+                            p Nombre del agente capacitador o STPS
+                        .dato-agente
+                            h4
+                                span #{capacitadorPrincipal.nombre}
+                                | (Registro número
+                                span AARS-901224-LY4-0005)
+                    // FIN DATOS DEL PROGRAMA DE CAPACITACIÓN
+                    // SECCION DE FIRMAS
+                    .firmas
+                        .info
+                            p
+                                | Los datos se asientan en esta constancia bajo protesta de decir verdad, apercibidos de la responsabilidad
+                                | en que incurre todo aquel que no se conduce con verdad
+                        .jefes
+                            .instructor
+                                p Intructor o tutor
+                            .patron
+                                p Patrón o representante legal
+                            .representante
+                                p Representante de los trabajadores
+                        .firmas-imagen
+                            .firma-instructor
+                                img(src=`http://127.0.0.1:3000/img/users/firmaElectronica/${capacitadorPrincipal.firmaElectronica}`)
+                            .firma-patron
+                                img(src="https://i.pinimg.com/736x/56/05/7c/56057c30fee4712c2deba44cd8fc72f2.jpg")
+                            .firma-representante
+                                img(src="https://i.pinimg.com/736x/56/05/7c/56057c30fee4712c2deba44cd8fc72f2.jpg")
+                        .section-datos-firma
+                            .dato-instructor
+                                h4 #{capacitadorPrincipal.nombre}
+                                .linea
+                            .dato-patron
+                                h4 #{user.representanteLegal}
+                                .linea
+                            .dato-representante
+                                h4 #{user.representanteTrabajadores}
+                                .linea
+                        .section-nombre-firma
+                            .nombre-firma-instructor
+                                p Nombre y firma
+                            .nombre-firma-patron
+                                p Nombre y firma
+                            .nombre-firma-representante
+                                p Nombre y firma
+                    // FIN SECCION DE FIRMAS
+                    // SECCIÓN INSTRUCCIONES
+                    .instrucciones
+                        h4 INSTRUCCIONES
+                        p - Llenar a máquina o con letra de molde
+                        p
+                            | - Debera entregarse al trabajador dentro de los veinte dias hábiles siguientes al término del curso de
+                            | capacitación aprobado.
+                        p
+                            | Las áreas y subáreas ocupacionales del Catálogo Nacional de Ocupaciones se encuentran disponibles en el
+                            | reverso de este formato y en la página
+                            a(href="https://www.gob.mx/stps/", target="_blank") www.stps.gob.mx
+                        p  Las áreas temáticas de los cursos se encuentran disponibles en el reverso de este formato en la página 
+                            a(href="https://www.gob.mx/stps/", target="_blank") www.stps.gob.mx
+                        p  Cursos impartidos por el área competente de la Secretaria del Trabajo y Previsión Social.
+                        p
+                            | Para empresa con menos de 51 trabajadores. Para empresas con mas de 50 trabajadores firmaría el
+                            | representante del patrón ante la Comisión mixta de capacitación, adiestramiento y productividad.
+                        p  Solo para empresas con más de 50 trabajadores.
+                        p * Dato no obligatorio.
+                    // FIN SECCION INSTRUCCIONES

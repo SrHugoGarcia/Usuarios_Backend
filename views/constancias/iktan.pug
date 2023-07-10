@@ -1,0 +1,53 @@
+doctype html
+html
+  head
+      link(href="http://fonts.cdnfonts.com/css/avenir", rel="stylesheet")
+      link(href="http://fonts.cdnfonts.com/css/humanst521-lt-bt", rel="stylesheet")
+      link(href="http://fonts.cdnfonts.com/css/utm-avo", rel="stylesheet")
+      include _style
+      //amechi "https://i.imgur.com/QvDL6yr.png"
+  body
+    .borde
+      img.img(src= `http://127.0.0.1:3000/constancias IKTAN/background/${constancia.background}`)
+      .containerLogo
+        img.imgLogo(src=`http://127.0.0.1:3000/constancias IKTAN/logos/${constancia.logo}`)
+      .containerIktan
+        img.imgIktan(src="https://i.imgur.com/rWlUHVM.png")
+      .containerTexto
+        .containerTextoUno
+          | Extendido a:
+        .containerTextoDos
+          | #{constancia.nombreCandidato} #{constancia.apellidoPaterno} #{constancia.apellidoMaterno}
+        .containerTextoTres
+          | Por haber completado satisfactoriamente el curso de:
+        .containerTextoCuatro
+          | #{curso.nombreCurso}
+        .containerTextoCinco
+          | Con una calificacion de: #{constancia.calificacion}
+        .containerTextoSeis
+          | #{curso.descripcionCurso}
+      .containerHeader
+        .vertical
+          img.firmas(src=`http://127.0.0.1:3000/constancias IKTAN/firmasElectronicas/${curso.firmaCapacitador}`)
+          br
+          b Ing. #{curso.nombreCapacitador} #{curso.apellidoPaternoCapacitador} #{curso.apellidoMaternoCapacitador}
+          br
+          span  #{curso.puestoCapacitador}
+            br
+            | #{curso.empresaCapacitador}
+            br
+   
+        .horizontal
+          img.firmas(src=`http://127.0.0.1:3000/constancias IKTAN/firmasElectronicas/${curso.firmaCapacitadorPrincipal}`)
+          br
+          b Ing. #{curso.nombreCapacitadorPrincipal} #{curso.apellidoPaternoCapacitadorPrincipal} #{curso.apellidoMaternoCapacitadorPrincipal}
+          br
+          span  #{curso.puestoCapacitadorPrincipal}
+            br
+            | #{curso.empresaCapacitadorPrincipal}
+        .horizontal2 
+          img.qrr(src=`https://www.codigos-qr.com/qr/php/qr_img.php?d=https%3A%2F%2Fiktantraining.com%2Fregistros&s=6&e=m`)
+      .qr
+        | Folio:  #{constancia.folio}
+        br
+        | WWW.IKTANSTRATEGIES.COM/REGISTROS
