@@ -141,7 +141,7 @@ const actualizarContraseña = catchAsync(async(req,res,next)=>{
     const user = await User.findById(req.user.id).select('contraseña');
     const contraseñaCurrent = req.body.contraseñaCurrent;
     if(!await user.correctaContraseña(contraseñaCurrent,user.contraseña)){
-        return next(new AppError("Las contraseña es incorrecta",401));
+        return next(new AppError("La contraseña es incorrecta",401));
     }
     const contraseña= req.body.contraseña;
     const confirmarContraseña = req.body.confirmarContraseña;
