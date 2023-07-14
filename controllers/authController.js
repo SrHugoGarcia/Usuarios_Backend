@@ -154,4 +154,4 @@ const actualizarContraseña = catchAsync(async(req,res,next)=>{
     
 });
 
-module.exports = {registro, login,cerrarSesion ,protect, restrictTo, olvideContraseña, restablecerContraseña, actualizarContraseña,comprobarToken};
+module.exports = {registro, login,cerrarSesion ,protect, restrictTo, olvideContraseña, restablecerContraseña, actualizarContraseña};
