@@ -2,7 +2,7 @@ const User = require('../models/User');
 const catchAsync = require('../utils/catchAsync');
 //const APIFeature = require('../utils/apiFeature');
 const AppError = require('../utils/AppError');
-const { deleteOne, updateOne, getOne, getAll } = require('../controllers/handleFactory')
+const { deleteOne, updateOne, getOne, getAll, createOne } = require('../controllers/handleFactory')
 //Modulo para la carga de archivos desde el cliente al servidor
 
 const filtrarObj = (obj, ...parametrosPermitidos) => {
@@ -49,11 +49,7 @@ const getMe = (req, res, next) => {
     next();
 }
 
-const createUser = catchAsync(async (req, res, next) => {
-    res.status(200).json({
-        message: "Este ruta no esta disponible, Porfavor use la ruta de users/registro"
-    })
-});
+const createUser = createOne(User);
 
 const allUsers = getAll(User);
 
