@@ -65,7 +65,7 @@ const userSchema = new mongoose.Schema({
     },
     confirmar:{
         type: Boolean,
-        default: false,
+        default: true,
     },
     mapa:String,
     token:String,
