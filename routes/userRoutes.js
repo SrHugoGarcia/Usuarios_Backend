@@ -3,12 +3,11 @@ const express = require('express');
 //Modulo userController
 const {createUser,allUsers,oneUser,updateUser,deleteUser, updateMe, deleteMe, getMe} = require('../controllers/userController')
 const {registro,login,olvideContraseña,restablecerContraseña, protect,actualizarContraseña,
-     restrictTo, cerrarSesion, comprobarToken } = require('../controllers/authController');
+     restrictTo, cerrarSesion } = require('../controllers/authController');
 const router = express.Router();
 
 //Autenticacion
 router.route('/registro').post(registro);
-router.route('/confirmar/:token').get(comprobarToken)
 router.route('/login').post(login)
 router.route('/cerrarSesion').get(cerrarSesion)
 router.route('/olvidePassword').post(olvideContraseña);

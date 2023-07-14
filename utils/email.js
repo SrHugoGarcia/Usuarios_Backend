@@ -54,7 +54,7 @@ class Email{
         await this.send('confirmarToken', 'Tu cuenta ya esta casi lista')
     }
     async sendWelcome(){
-       await this.send('welcome', 'Bienvenid@ a la familia de IKTAN TRAINING')
+       await this.send('welcome', 'Bienvenido a mapas de IKTAN STRATEGIES')
     }
     async sendPaswordReset(){
         await this.send('passwordReset', 'Su token de restablecimiento de contraseña(solo es valido por 10 minutos)')
