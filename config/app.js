@@ -40,8 +40,8 @@ app.use((req,res,next) =>{
     next();
 })
 app.use(express.static(`${__dirname}/../public/servidor`))
-/*
-const whileList = ['http://127.0.0.1:3000',process.env.FRONTEND_URL];
+
+const whileList = [process.env.FRONTEND_URL];
 const corsOptions = {
     origin: function (origin, callback) {
       if(whileList.includes(origin)){
@@ -54,7 +54,7 @@ const corsOptions = {
   }
   ///img/cursos/
   //
-app.use(cors(corsOptions)) */
+app.use(cors(corsOptions)) 
 app.use(express.static(`${__dirname}/../public/cliente`))
 
 app.use('/api/v1/users',userRoutes);
