@@ -14,10 +14,21 @@ const signToken = id =>{
 
 const createSendToken =(user,statusCode,req,res)=>{
     const token = signToken(user._id);
-    const cookieOptions ={
+    //local
+    /*const cookieOptions ={
         expires: new Date(Date.now() + process.env.JWT_COOKIE_EXPIRES_IN *24 *60 *60*1000),
         secure:  req.secure || req.headers['x-forwarded-proto'] === 'https', 
         httpOnly: true,
+    }*/
+    //production
+    const cookieOptions ={
+        //Fecha en milisegundos
+        secure: true,
+        //secure:  req.secure || req.headers['x-forwarded-proto'] === 'https',
+        expires: new Date (
+        Date.now () + process.env.JWT_COOKIE_EXPIRES_IN * 24 * 60 * 60 * 1000
+        ),
+        sameSite: 'none',
     }
     user.contraseña = undefined;
     res.cookie('jwt',token,cookieOptions);
@@ -63,9 +74,10 @@ const login =catchAsync(async(req,res,next)=>{
 
 const cerrarSesion =(req,res)=>{
     res.cookie('jwt', 'CerrarSesion',{
-        expires: new Date(Date.now() + process.env.JWT_COOKIE_EXPIRES_IN *24 *60 *60*1000),
-        secure:  req.secure || req.headers['x-forwarded-proto'] === 'https', 
-        httpOnly: true,
+        secure: true,
+        expires: new Date (
+        Date.now () + process.env.JWT_COOKIE_EXPIRES_IN * 24 * 60 * 60 * 1000),
+        sameSite: 'none',
     });
     res.status(200).json({status: 'successful'});
 };
